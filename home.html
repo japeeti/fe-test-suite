@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +12,12 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
       background-color: #f4f4f4;
     }
+
     /* Navigation */
     nav {
       display: flex;
@@ -22,20 +26,24 @@
       padding: 20px 40px;
       background-color: #333;
     }
+
     .nav-logo {
       font-size: 24px;
       color: #fff;
       text-decoration: none;
     }
+
     .nav-links {
       display: flex;
     }
+
     .nav-link {
       font-size: 18px;
       color: #fff;
       text-decoration: none;
       margin-left: 20px;
     }
+
     /* Hero Section */
     .hero {
       height: 80vh;
@@ -46,41 +54,129 @@
       background-size: cover;
       background-position: center;
     }
+
     .hero-text {
       font-size: 48px;
       color: #fff;
       text-align: center;
     }
+
     /* Footer */
     footer {
       padding: 20px;
       background-color: #333;
       text-align: center;
     }
+
     footer p {
       font-size: 14px;
       color: #fff;
       margin-bottom: 10px;
     }
+
+    /* Homepage cards */
+    .card {
+      margin: 50px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-title {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .card-text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #666;
+    }
+    
+    .card-link {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .card-link:hover {
+      color: #1a1a1a;
+    }
+    
+    /* Remove right facing arrows from homepage cards */
+    .right-arrow {
+      display: none;
+    }
+    
   </style>
 </head>
+
 <body>
-<nav>
-  <a href="#" class="nav-logo">Japeeti</a>
-  <div class="nav-links">
-    <a href="#" class="nav-link">Features</a>
-    <a href="#" class="nav-link">Pricing</a>
-    <a href="#" class="nav-link">Documentation</a>
-    <a href="#" class="nav-link">Blog</a>
-    <a href="#" class="nav-link">About</a>
-    <a href="#" class="nav-link">Contact</a>
-  </div>
-</nav>
-<section class="hero">
-  <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
-</section>
-<footer>
-  <p>&copy; 2023 Japeeti. All rights reserved.</p>
-</footer>
+  <nav>
+    <a href="#" class="nav-logo">Japeeti</a>
+    <div class="nav-links">
+      <a href="#" class="nav-link">Features</a>
+      <a href="#" class="nav-link">Pricing</a>
+      <a href="#" class="nav-link">Documentation</a>
+      <a href="#" class="nav-link">Blog</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img class="card-img" src="https://via.placeholder.com/300x200" alt="card image">
+      <h2 class="card-title">Automation</h2>
+      <p class="card-text">Automate tasks and save time with Japeeti's AI assistant.</p>
+      <a href="#" class="card-link">Learn more</a>
+      <div class="right-arrow"></div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://via.placeholder.com/300x200" alt="card image">
+      <h2 class="card-title">Real-time Monitoring</h2>
+      <p class="card-text">Stay informed and productive with real-time updates.</p>
+      <a href="#" class="card-link">Learn more</a>
+      <div class="right-arrow"></div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://via.placeholder.com/300x200" alt="card image">
+      <h2 class="card-title">Customization</h2>
+      <p class="card-text">Customize Japeeti to fit your unique needs and workflows.</p>
+      <a href="#" class="card-link">Learn more</a>
+      <div class="right-arrow"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Japeeti. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
+```
